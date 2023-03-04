@@ -1,6 +1,9 @@
 def rm_smallest(d):
     # Your code here!
-    return 0;
+    if not bool(d):
+        return d
+    d.pop(min(zip(d.values(), d.keys()))[1])
+    return d
 
 def test():
     assert 'a' in rm_smallest({'a':1,'b':-10}).keys()
