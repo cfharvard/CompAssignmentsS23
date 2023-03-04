@@ -1,10 +1,8 @@
 import math
 
 def square_root(n):
-    if isinstance(n, int) and (n >= 0):
-        return math.sqrt(n)
-    return -1
-    
+    # Your code here!
+    return -1;
 
 def test():
     assert square_root(4) == 2
